@@ -4,7 +4,9 @@
     <option name="autoReloadType" value="NONE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="14b5086d-21f7-4858-bd2f-8eb60842dd51" name="Changes" comment="" />
+    <list default="true" id="14b5086d-21f7-4858-bd2f-8eb60842dd51" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/../CoffeeCards/lib/coffecards/AlignWidget.dart" beforeDir="false" afterPath="$PROJECT_DIR$/../CoffeeCards/lib/coffecards/AlignWidget.dart" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -12,6 +14,9 @@
   </component>
   <component name="ClangdSettings">
     <option name="formatViaClangd" value="false" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
   </component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 8
@@ -30,9 +35,10 @@
     "cf.first.check.clang-format": "false",
     "cidr.known.project.marker": "true",
     "dart.analysis.tool.window.visible": "false",
+    "git-widget-placeholder": "main",
     "io.flutter.reload.alreadyRun": "true",
     "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "C:/class/10_Flutter/b_layout_widget",
+    "last_opened_file_path": "C:/class/10_Flutter_sy/b_layout_widget",
     "show.migrate.to.gradle.popup": "false"
   }
 }]]></component>

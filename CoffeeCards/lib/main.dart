@@ -19,7 +19,7 @@ class MainApp extends StatelessWidget {
             title: const Text("Coffe Cards")
         ),
         body: const Center(
-          child: CoffeCards(),
+          child: CoffeeScreen(),
         ),
       ),
     );
