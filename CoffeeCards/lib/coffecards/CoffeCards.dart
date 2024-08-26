@@ -2,7 +2,6 @@ import 'dart:io';
 
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter_app/models/CoffeeItem.dart';
 
 class CoffeeWidget extends StatelessWidget {
   CoffeeWidget({required this.coffeeItem, required this.index, super.key});
