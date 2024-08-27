@@ -20,36 +20,36 @@ class TabScreen extends StatelessWidget{
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-        home : DefaultTabController(
-          length: 3,
-          child: Scaffold(
-            appBar: AppBar(
-              title: const Text("탭 예제"),
-              bottom: const TabBar(
-                  indicatorColor: Colors.red,
-                  tabs: [
-                    Tab(icon: Icon(Icons.directions_car), child: Text("자동차")),
-                    Tab(icon: Icon(Icons.directions_train), child: Text("지하철")),
-                    Tab(icon: Icon(Icons.directions_bike), child: Text("자전거")),
-                  ]
-              ),
-              actions: [
-                IconButton(onPressed: (){
-                  Navigator.pop(context);
-                }, icon: const Icon(Icons.arrow_back))
-              ],
+      home : DefaultTabController(
+        length: 3,
+        child: Scaffold(
+          appBar: AppBar(
+            title: const Text("탭 예제"),
+            bottom: const TabBar(
+                indicatorColor: Colors.red,
+                tabs: [
+                  Tab(icon: Icon(Icons.directions_car), child: Text("자동차")),
+                  Tab(icon: Icon(Icons.directions_train), child: Text("지하철")),
+                  Tab(icon: Icon(Icons.directions_bike), child: Text("자전거")),
+                ]
             ),
-            body: TabBarView(
-              children: [
-                Center(
-                  child: Column(
-                    children: [
-                      ElevatedButton(onPressed: (){
-                        Navigator.push(
-                            context,
-                            MaterialPageRoute(
-                                builder: (context) => const PathValueScreen(),
-                                /*
+            actions: [
+              IconButton(onPressed: (){
+                Navigator.pop(context);
+              }, icon: const Icon(Icons.arrow_back))
+            ],
+          ),
+          body: TabBarView(
+            children: [
+              Center(
+                child: Column(
+                  children: [
+                    ElevatedButton(onPressed: (){
+                      Navigator.push(
+                          context,
+                          MaterialPageRoute(
+                              builder: (context) => const PathValueScreen(),
+                            /*
                             * 내비게이션 시스템에서 라우트에 대한 설정 정보를 담고 있는 클래스이다.
                             * 이 클래스는 라우트의 이름과 추가적인 인자를 전달할 수 있도록 도와준다.
                             * 주로 라우트 생성할 때 사용되며, 해당 라우트의 상태와 정보를 관리하는데 유용하다.
@@ -58,15 +58,15 @@ class TabScreen extends StatelessWidget{
                             * name : 라우트의 이름을 나타내는 문자열이다. 주로 라우트를 식별하거나 다른 라우트로 정보를 전달하는데 사용된다.
                             * arguments : 라우트에 전달할 추가적인 인자를 나타내며 특정 데이터나 라우트 간에 전달할 때 유용하다.
                             * */
-                                settings: const RouteSettings(arguments: 1)
-                            )
-                        );
-                      }, child: const Text("자동차 타고 PathValue 알아보기"))
-                    ],
-                  ),
+                            settings: const RouteSettings(arguments: 1)
+                          )
+                      );
+                    }, child: const Text("자동차 타고 PathValue 알아보기"))
+                  ],
                 ),
-
-                Center(child:
+              ),
+              
+              Center(child: 
                 Column(
                   children: [
                     ElevatedButton(onPressed: (){
@@ -79,13 +79,13 @@ class TabScreen extends StatelessWidget{
 
                   ],
                 )
-                ),
-
-                const Center(child: Text("자전거 페이지"),)
-              ],
-            ),
+              ),
+              
+              const Center(child: Text("자전거 페이지"),)
+            ],
           ),
-        )
+        ),
+      )
     );
   }
 }

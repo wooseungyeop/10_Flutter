@@ -12,15 +12,15 @@ class QueryStringValueScreen extends StatelessWidget{
   @override
   Widget build(BuildContext context) {
     return ScaffoldWidget(widget: Center(child:
-    Column(
-      children: [
-        Text(name ?? "입력한 이름이 없습니다."),
-        (age == null) ? const Text("입력한 나이가 없습니다.") : Text("나이 : $age"),
-        ElevatedButton(onPressed: (){
-          Navigator.pushNamed(context, "/pageview");
-        }, child: const Text("pageView 이동"))
-      ],
-    )
+      Column(
+        children: [
+          Text(name ?? "입력한 이름이 없습니다."),
+          (age == null) ? const Text("입력한 나이가 없습니다.") : Text("나이 : $age"),
+          ElevatedButton(onPressed: (){
+            Navigator.pushNamed(context, "/pageview");
+          }, child: const Text("pageView 이동"))
+        ],
+      )
       ,)
     );
   }

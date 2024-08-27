@@ -1,10 +1,8 @@
+
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
-class IconWidget extends StatelessWidget{
-  const IconWidget({super.key});
-
-  /*
+/*
 * icon
 * flutter에서 아이콘을 화면에 표시하는 데 사용되는 위젯이다.
 * 이 위젯은 Material Design 아이콘 세트를 사용하여 다양한 아이콘을 쉽게 추가할 수 있도록 한다.
@@ -19,6 +17,8 @@ class IconWidget extends StatelessWidget{
 * 아래의 사이트로 이동하면 아이콘의 목록을 확인할 수 있다.
 * https://api.flutter.dev/flutter/material/Icons-class.html
 * */
+class IconWidget extends StatelessWidget{
+  const IconWidget({super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -28,5 +28,6 @@ class IconWidget extends StatelessWidget{
       color: Colors.red,
       semanticLabel: "favorite Icon",
     );
+
   }
 }

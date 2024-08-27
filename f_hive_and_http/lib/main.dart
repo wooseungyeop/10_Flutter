@@ -1,4 +1,5 @@
 import 'package:f_hive_and_http/01_hive/00_HiveScreen.dart';
+import 'package:f_hive_and_http/02_http/00_NetworkScreen.dart';
 import 'package:flutter/material.dart';
 import 'package:hive/hive.dart';
 import 'package:path_provider/path_provider.dart';
@@ -75,7 +76,8 @@ class RootState extends State<RootScreen>{
   }
 
   final List<Widget> _pages = [
-    HiveScreen()
+    HiveScreen(),
+    NetworkScreen()
   ];
 
   @override

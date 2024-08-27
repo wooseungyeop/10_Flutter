@@ -10,23 +10,23 @@ class FirstScreen extends StatelessWidget {
   Widget build(BuildContext context) {
     return ScaffoldWidget(
         widget: Center(
-          child: Column(
-            mainAxisAlignment: MainAxisAlignment.center,
-            children: [
-              const Text("첫 번째 페이지 입니다."),
+      child: Column(
+        mainAxisAlignment: MainAxisAlignment.center,
+        children: [
+          const Text("첫 번째 페이지 입니다."),
 
-              ElevatedButton(
-                  onPressed: () {
-                    Navigator.pushNamed(context, "/second");
-                  },
-                  child: const Text("페이지 이동")),
+          ElevatedButton(
+              onPressed: () {
+                Navigator.pushNamed(context, "/second");
+              },
+              child: const Text("페이지 이동")),
 
-              ElevatedButton(onPressed: (){
-                Navigator.pushNamed(context, "/bottom");
-              }, child: Text("bottom 이동"))
-            ],
-          ),
-        ));
+          ElevatedButton(onPressed: (){
+            Navigator.pushNamed(context, "/bottom");
+          }, child: Text("bottom 이동"))
+        ],
+      ),
+    ));
   }
 }
 
@@ -46,27 +46,27 @@ class SecondScreen extends StatelessWidget {
   Widget build(BuildContext context) {
     return ScaffoldWidget(
         widget: Center(
-          child: Column(
-            mainAxisAlignment: MainAxisAlignment.center,
-            children: [
-              const Text("두 번째 페이지 입니다."),
+      child: Column(
+        mainAxisAlignment: MainAxisAlignment.center,
+        children: [
+          const Text("두 번째 페이지 입니다."),
 
-              ElevatedButton(
-                  onPressed: () {
-                    Navigator.pop(context);
-                  },
-                  child: const Text("뒤로 가기")),
+          ElevatedButton(
+              onPressed: () {
+                Navigator.pop(context);
+              },
+              child: const Text("뒤로 가기")),
 
-              ElevatedButton(onPressed: (){
-                Navigator.push(
-                    context,
-                    MaterialPageRoute(builder: (context) => const TabScreen())
-                );
-              }, child: const Text("tab 이동"))
+          ElevatedButton(onPressed: (){
+            Navigator.push(
+              context,
+              MaterialPageRoute(builder: (context) => const TabScreen())
+            );
+          }, child: const Text("tab 이동"))
 
 
-            ],
-          ),
-        ));
+        ],
+      ),
+    ));
   }
 }

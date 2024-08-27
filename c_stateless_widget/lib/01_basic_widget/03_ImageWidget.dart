@@ -40,7 +40,6 @@ import 'package:flutter/material.dart';
 * 4. 에러 처리 : 네트워크 요청이 실패한 경우, 기본적으로 Image 위젯은 여러 이미지를 표시하거나 빈 공간을 남길 수 있다.
 * */
 
-
 class ImageWidget extends StatelessWidget{
   const ImageWidget({super.key});
 
@@ -49,22 +48,17 @@ class ImageWidget extends StatelessWidget{
     return const Row(
       children: [
         Tooltip(
-          message : "춘이",
+          message: "춘이 입니다.",
           child: Image(
-          image: AssetImage("assets/image.jpg"),
-          width: 100,
-          height: 200,
+            image: AssetImage("assets/image2.jpg"),
+            width: 200,
+            height: 200,
           ),
         ),
         Image(
-          image: AssetImage("assets/image.jpg"),
-          width: 100,
-          height: 200,
-        ),
-        Image(
-          image: NetworkImage("https://cdn.comento.kr/blog/developer/2023/11/flutter-plugin.webp"),
-          width: 100,
-          height: 200,
+            image: NetworkImage("https://cdn.comento.kr/blog/developer/2023/11/flutter-plugin.webp"),
+            width: 100,
+            height: 200,
         ),
       ],
     );

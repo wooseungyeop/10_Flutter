@@ -8,22 +8,22 @@ class PageViewScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return ScaffoldWidget(widget:
-    PageView(
-      children: [
-        Container(
-          color: Colors.red,
-          child: const Center(child: Text("페이지 1")),
-        ),
-        Container(
-          color: Colors.blue,
-          child: const Center(child: Text("페이지 2")),
-        ),
-        Container(
-          color: Colors.amber,
-          child: const Center(child: Text("페이지 3")),
-        )
-      ],
-    )
+      PageView(
+        children: [
+          Container(
+            color: Colors.red,
+            child: const Center(child: Text("페이지 1")),
+          ),
+          Container(
+            color: Colors.blue,
+            child: const Center(child: Text("페이지 2")),
+          ),
+          Container(
+            color: Colors.amber,
+            child: const Center(child: Text("페이지 3")),
+          )
+        ],
+      )
     );
   }
 }

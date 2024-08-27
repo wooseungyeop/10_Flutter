@@ -1,7 +1,7 @@
 import 'package:e_navigator_widget/01_basicNavigation/01_FirstScreen.dart';
 import 'package:e_navigator_widget/03_routerValue/02_QueryStringValueScreen.dart';
 import 'package:e_navigator_widget/04_pageView/01_PageViewScreen.dart';
-import 'package:e_navigator_widget/05_bottomNavigation/BottomNavigationScreen.dart';
+import 'package:e_navigator_widget/05_bottomNavigation/01_BottomNavigationScreen.dart';
 import 'package:flutter/material.dart';
 
 void main() {

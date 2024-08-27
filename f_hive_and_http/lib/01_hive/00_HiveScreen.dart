@@ -28,6 +28,7 @@ class _HiveState extends State<HiveScreen>{
   Widget build(BuildContext context) {
     return Center(
       child: Column(
+        mainAxisAlignment: MainAxisAlignment.center,
         children: [
           box == null
               ?  const Center(child: CircularProgressIndicator())//박스가 열리지 않았을 경우 로딩 상태 표시를 위함.
@@ -43,6 +44,24 @@ class _HiveState extends State<HiveScreen>{
           }, child: Text("조회")),
 
 
+          ElevatedButton(onPressed: (){
+            Map<String, String> mapList = {"key1":"value", "key2":"value", "key3":"value",};
+            box!.putAll(mapList);
+          }, child: Text("다중 데이터 저장")),
+
+          ElevatedButton(onPressed: (){
+            final length = box!.length; // 저장소의 길이를 확인한다.
+            final values = box!.values; // 저장되어 있는 모든 value를 가져온다.
+            print("length : $length \n values : $values");
+
+          }, child: const Text("전체 조회")),
+
+          ElevatedButton(onPressed: (){
+            box!.delete("key1"); // 해당 key를 삭제한다.
+            final length = box!.length;
+            final values = box!.values;
+            print("length : $length \n values : $values");
+          }, child: const Text("삭제"))
         ],
       ),
     );

@@ -15,7 +15,7 @@ class MainApp extends StatelessWidget {
       home: Scaffold(
         appBar: AppBar(
           backgroundColor: Theme.of(context).colorScheme.inversePrimary,
-          title: const Text("Basic widget")
+          title : Text("Basic widget")
         ),
         body: const Center(
           child: Combination(),
